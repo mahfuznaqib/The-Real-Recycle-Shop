@@ -581,7 +581,7 @@ flex-shrink: 0;
 画像が縮小されるのを防ぐ
 */
 #item .item-image {
-  max-width: 400px;
+  max-width: 300px;
   flex-shrink: 0;
   margin-right: 60px;
 }
@@ -695,4 +695,19 @@ SP
     -webkit-appearance: menulist;
   }
 
+}
+@media screen and (max-width: 480px) {
+  #item {
+    flex-direction: column;
+  }
+
+  #item .item-image {
+    margin-right: 0;
+    
+    margin-bottom: 20px;
+  }
+
+  #item .item-info {
+    width: 100%;
+  }
 }
